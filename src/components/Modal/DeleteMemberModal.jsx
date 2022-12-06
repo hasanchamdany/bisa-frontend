@@ -42,7 +42,7 @@ const DeleteMemberModal = (props) => {
     console.log(inputs);
     console.log(props.data._id);
     axios
-      .delete("https://bisa-backend.vercel.app///api/member/" + props.data._id, inputs)
+      .delete("https://bisa-backend.vercel.app/api/member/" + props.data._id, inputs)
       .then(function (response) {
         console.log(response);
         setAlert({ open: true, vertical: "bottom", horizontal: "right" });

@@ -33,7 +33,7 @@ const AddMemberModal = (props) => {
     const token = localStorage.getItem("accessToken");
     event.preventDefault();
     axios
-      .post("https://bisa-backend.vercel.app///api/auth/register", inputs, {
+      .post("https://bisa-backend.vercel.app/api/auth/register", inputs, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(function (response) {

@@ -35,7 +35,7 @@ const AddBikeModal = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("https://bisa-backend.vercel.app///api/bike", inputs, {
+      .post("https://bisa-backend.vercel.app/api/bike", inputs, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(function (response) {

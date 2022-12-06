@@ -46,7 +46,7 @@ const RentModal = (props) => {
     console.log(inputs);
     // console.log(props.data._id);
     axios
-      .post("https://bisa-backend.vercel.app///api/booking", inputs, {
+      .post("https://bisa-backend.vercel.app/api/booking", inputs, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(function (response) {

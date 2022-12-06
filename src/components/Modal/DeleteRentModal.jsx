@@ -43,7 +43,7 @@ const DeleteRentModal = (props) => {
     console.log(inputs);
     console.log(props.data._id);
     axios
-      .delete("https://bisa-backend.vercel.app///api/booking/" + props.data._id, { headers: {"Authorization" : `Bearer ${token}`} })
+      .delete("https://bisa-backend.vercel.app/api/booking/" + props.data._id, { headers: {"Authorization" : `Bearer ${token}`} })
       .then(function (response) {
         console.log(response);
         setAlert({ open: true, vertical: "bottom", horizontal: "right" });

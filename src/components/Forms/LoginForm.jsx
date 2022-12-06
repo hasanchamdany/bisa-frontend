@@ -37,7 +37,7 @@ export default function Form() {
 
     try {
       const res = axios
-        .post("https://bisa-backend.vercel.app///api/auth/login", inputs)
+        .post("https://bisa-backend.vercel.app/api/auth/login", inputs)
         .then(function (response) {
           localStorage.setItem("accessToken", response.data.token);
           localStorage.setItem("userID", response.data.user._id);

@@ -43,7 +43,7 @@ const EditBikeModal = (props) => {
     console.log(inputs);
     console.log(props.data._id);
     axios
-      .put("https://bisa-backend.vercel.app///api/bike/" + props.data._id, inputs, {
+      .put("https://bisa-backend.vercel.app/api/bike/" + props.data._id, inputs, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(function (response) {

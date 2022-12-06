@@ -35,7 +35,7 @@ const SignUpForm = () => {
 
     try {
       const res = axios
-        .post("https://bisa-backend.vercel.app///api/auth/register", inputs)
+        .post("https://bisa-backend.vercel.app/api/auth/register", inputs)
         .then(function (response) {
           navigate("/auth/login");
         })

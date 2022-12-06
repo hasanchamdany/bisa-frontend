@@ -41,7 +41,7 @@ const EditRentModal = (props) => {
     console.log(inputs);
     console.log(props.data._id);
     axios
-      .put("https://bisa-backend.vercel.app///api/booking/" + props.data._id , inputs, { headers: {"Authorization" : `Bearer ${token}`} })
+      .put("https://bisa-backend.vercel.app/api/booking/" + props.data._id , inputs, { headers: {"Authorization" : `Bearer ${token}`} })
       .then(function (response) {
         console.log(response);
         setAlert({ open: true, vertical: "bottom", horizontal: "right" });

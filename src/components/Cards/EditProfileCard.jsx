@@ -30,7 +30,7 @@ const EditProfileCard = () => {
   const { vertical, horizontal, open } = alert;
   useEffect(() => {
     axios
-      .get("https://bisa-backend.vercel.app///api/member/" + userId, {
+      .get("https://bisa-backend.vercel.app/api/member/" + userId, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(function (response) {
@@ -52,7 +52,7 @@ const EditProfileCard = () => {
     console.log(inputs);
     console.log(userData._id);
     axios
-      .put("https://bisa-backend.vercel.app///api/member/" + userId, inputs, {
+      .put("https://bisa-backend.vercel.app/api/member/" + userId, inputs, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(function (response) {

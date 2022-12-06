@@ -19,7 +19,7 @@ const DashboardMember = () => {
       } else {
         const res = axios
           .get(
-            "https://bisa-backend.vercel.app///api/member/" + localStorage.getItem("userID")
+            "https://bisa-backend.vercel.app/api/member/" + localStorage.getItem("userID")
           )
           .then(function (response) {
             if (response.data.isAdmin === false) {

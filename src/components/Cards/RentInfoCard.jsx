@@ -15,7 +15,7 @@ const RentInfoCard = () => {
   const [rentData, setRentData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://bisa-backend.vercel.app///api/booking/" + userId, {
+      .get("https://bisa-backend.vercel.app/api/booking/" + userId, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(function (response) {

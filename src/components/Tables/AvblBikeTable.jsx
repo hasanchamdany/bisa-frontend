@@ -49,7 +49,7 @@ const columns = [
 ];
 
 export default function StickyHeadTable(props) {
-  const { data, loading, error } = useFetch("https://bisa-backend.vercel.app///api/bike");
+  const { data, loading, error } = useFetch("https://bisa-backend.vercel.app/api/bike");
   // console.log("data", data)
   // console.log(props.filter)
   const [filteredData, setFilteredData] = useState(data);
