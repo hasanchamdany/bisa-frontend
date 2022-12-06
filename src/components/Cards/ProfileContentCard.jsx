@@ -13,7 +13,7 @@ const ProfileContentCard = () => {
   //   console.log(userId);
   useEffect(() => {
     axios
-      .get("https://bisa-backend-5mjjo66u0-phiapple-std.vercel.app//api/member/" + userId, {
+      .get("https://bisa-backend.vercel.app///api/member/" + userId, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(function (response) {

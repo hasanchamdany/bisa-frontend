@@ -47,7 +47,7 @@ const ReturnModal = (props) => {
     console.log(props.data._id);
     axios
       .put(
-        "https://bisa-backend-5mjjo66u0-phiapple-std.vercel.app//api/booking/return/" + props.data._id,
+        "https://bisa-backend.vercel.app///api/booking/return/" + props.data._id,
         inputs,
         {
           headers: { Authorization: `Bearer ${token}` },

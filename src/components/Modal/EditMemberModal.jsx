@@ -41,7 +41,7 @@ const EditMemberModal = (props) => {
     console.log(inputs);
     console.log(props.data._id);
     axios
-      .put("https://bisa-backend-5mjjo66u0-phiapple-std.vercel.app//api/member/" + props.data._id, inputs)
+      .put("https://bisa-backend.vercel.app///api/member/" + props.data._id, inputs)
       .then(function (response) {
         console.log(response);
         setAlert({ open: true, vertical: "bottom", horizontal: "right" });

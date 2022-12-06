@@ -43,7 +43,7 @@ const DeleteBikeModal = (props) => {
     console.log(inputs);
     console.log(props.data._id);
     axios
-      .delete("https://bisa-backend-5mjjo66u0-phiapple-std.vercel.app//api/bike/" + props.data._id, {
+      .delete("https://bisa-backend.vercel.app///api/bike/" + props.data._id, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(function (response) {

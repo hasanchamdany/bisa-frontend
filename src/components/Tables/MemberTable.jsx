@@ -60,7 +60,7 @@ const columns = [
 ];
 
 export default function StickyHeadTable() {
-  const { data, loading, error } = useFetch("https://bisa-backend-5mjjo66u0-phiapple-std.vercel.app//api/member");
+  const { data, loading, error } = useFetch("https://bisa-backend.vercel.app///api/member");
   let [parseData, setParseData] = useState();
   let [editModal, setEditModal] = useState(false);
   let [deleteModal, setDeleteModal] = useState(false);
